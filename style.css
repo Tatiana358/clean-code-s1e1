@@ -162,7 +162,7 @@ li > input[type="checkbox"] {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li input[type="text"] {
   display:none
 }
 

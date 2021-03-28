@@ -32,7 +32,7 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.list__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -71,7 +71,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for='add__header'] {
+.add__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -99,12 +99,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='add__header'] {
+.add__header {
   display: block;
   margin: 0 0 20px;
 }
 
-input#add__header {
+.add__input {
   width: 318px;
 }
 
@@ -162,15 +162,15 @@ li > input[type="checkbox"] {
 }
 
 /* Edit Task */
-.list__input {
-  display: none
+ul li input[type=text] {
+  display:none
 }
 
-.list__task-mode-edit .list__input {
-  display: inline-block;
-  width: 224px
+.list__task_mode_edit .list__input {
+  display:inline-block;
+  width:224px
 }
 
-.list__task-mode-edit .list__name {
-  display: none;
+.list__task_mode_edit .list__name {
+  display:none;
 }

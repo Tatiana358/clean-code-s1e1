@@ -6,53 +6,61 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="matrix">
-      <img class="matrix_image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
-      <a class="matrix_info" class="more_inf"
+    <header class="matrix">
+      <img class="matrix__image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
+      <a class="matrix__info"
       href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="task-creator">
-      <p class="add">
-        <label for="add__label">Add Item</label>
-        <div class="add__input-wrapper">
-          <input class="add__input" id="new-task" type="text">
-          <button class="add__input">Add</button>
-        </div>
-      </p>
-      <h3 class="list__header">Todo</h3>
-      <ul class="list list_active" id="incomplete-tasks">
-        <li class="list__task">
-            <input class="list__mark-complete" type="checkbox">
-            <label class="list__name">Pay Bills</label>
-            <input class="list__input" type="text">
-            <button class="list__mark-edit">Edit</button>
-            <button class="list__mark-delete">
+    </header>
+    <main>
+      <div class="task-creator">
+        <section>
+          <h3 for="add__header">Add Item</h3>
+          <p class="add">
+            <div class="add__input-wrapper">
+              <input class="add__input" id="new-task" type="text">
+              <button class="add__input">Add</button>
+            </div>
+          </p>
+        </section>
+        <section>
+          <h3 class="list__header">Todo</h3>
+          <ul class="list list_active" id="incompleted-tasks">
+            <li class="list__task">
+              <input class="list__mark-complete" type="checkbox">
+              <label class="list__name">Pay Bills</label>
+              <input class="list__input" type="text">
+              <button class="list__mark-edit">Edit</button>
+              <button class="list__mark-delete">
                 <img class="list__image" src="./remove.svg" alt="Cross image">
               </button>
-          </li>
-        <li class="list__task list__task_mode_edit">
-            <input class="list__mark-complete" type="checkbox">
-            <label class="list__name">Go Shopping</label>
-            <input class="list__input" type="text" value="Go Shopping" class="task">
-            <button class="list__mark-edit">Save</button>
-            <button class="list__mark-delete">
-              <img class="list__image"src="./remove.svg" alt="Cross image">
-            </button>
-          </li>
-      </ul>
-      <h3 class="list__header">Completed</h3>
-      <ul class="list list_passed" id="completed-tasks">
-        <li class="list__task">
-            <input class="list__mark-complete" type="checkbox" checked>
-            <label class="list__name">See the Doctor</label>
-            <input class="list__input"type="text" class="task">
-            <button class="list__mark-edit">Edit</button>
-            <button class="list__mark-delete">
-              <img class="list__image"src="./remove.svg" alt="Cross image">
-            </button>
-          </li>
-      </ul>
-    </div>
+            </li>
+            <li class="list__task list__task_mode_edit">
+              <input class="list__mark-complete" type="checkbox">
+              <label class="list__name">Go Shopping</label>
+              <input class="list__input" type="text" value="Go Shopping">
+              <button class="list__mark-edit">Save</button>
+              <button class="list__mark-delete">
+                <img class="list__image"src="./remove.svg" alt="Cross image">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="list__header">Completed</h3>
+          <ul class="list list_passed" id="completed-tasks">
+            <li class="list__task">
+              <input class="list__mark-complete" type="checkbox" checked>
+              <label class="list__name task">See the Doctor</label>
+              <input class="list__input" type="text">
+              <button class="list__mark-edit">Edit</button>
+              <button class="list__mark-delete">
+                <img class="list__image"src="./remove.svg" alt="Cross image">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
   <script type="text/javascript" SRC="app.js"></script>
   </body>
 </html>

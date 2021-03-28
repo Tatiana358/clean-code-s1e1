@@ -161,7 +161,7 @@ li > input[type="checkbox"] {
 
 /* Completed */
 .list_passed .list__name{
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 

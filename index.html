@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <header class="matrix">
       <img class="matrix__image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix image">
       <a class="matrix__info"
@@ -14,11 +14,11 @@
     <main>
       <div class="task-creator">
         <section>
-          <h3 for="add__header">Add Item</h3>
+          <h3 class="add__header">Add Item</h3>
           <p class="add">
             <div class="add__input-wrapper">
               <input class="add__input" id="new-task" type="text">
-              <button class="add__input">Add</button>
+              <button class="add__button add__button_type_add">Add</button>
             </div>
           </p>
         </section>
@@ -26,20 +26,20 @@
           <h3 class="list__header">Todo</h3>
           <ul class="list list_active" id="incompleted-tasks">
             <li class="list__task">
-              <input class="list__mark-complete" type="checkbox">
+              <input class="list__radio-button list__radio-button_type_complete" type="checkbox">
               <label class="list__name">Pay Bills</label>
               <input class="list__input" type="text">
-              <button class="list__mark-edit">Edit</button>
-              <button class="list__mark-delete">
+              <button class="list__button list__button_type_edit">Edit</button>
+              <button class="list__button list__button_type_delete">
                 <img class="list__image" src="./remove.svg" alt="Cross image">
               </button>
             </li>
             <li class="list__task list__task_mode_edit">
-              <input class="list__mark-complete" type="checkbox">
+              <input class="list__radio-button list__radio-button_type_complete" type="checkbox">
               <label class="list__name">Go Shopping</label>
               <input class="list__input" type="text" value="Go Shopping">
-              <button class="list__mark-edit">Save</button>
-              <button class="list__mark-delete">
+              <button class="list__button list__button_type_edit">Save</button>
+              <button class="list__button list__button_type_delete">
                 <img class="list__image"src="./remove.svg" alt="Cross image">
               </button>
             </li>
@@ -49,11 +49,11 @@
           <h3 class="list__header">Completed</h3>
           <ul class="list list_passed" id="completed-tasks">
             <li class="list__task">
-              <input class="list__mark-complete" type="checkbox" checked>
+              <input class="list__radio-button list__radio-button_type_complete" type="checkbox" checked>
               <label class="list__name task">See the Doctor</label>
               <input class="list__input" type="text">
-              <button class="list__mark-edit">Edit</button>
-              <button class="list__mark-delete">
+              <button class="list__button list__button_type_edit">Edit</button>
+              <button class="list__button list__button_type_delete">
                 <img class="list__image"src="./remove.svg" alt="Cross image">
               </button>
             </li>
